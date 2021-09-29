@@ -8,8 +8,8 @@ public class PlayerMove : MonoBehaviour
     private Rigidbody2D body;
     private Animator anim;
 
-    public float runSpeed =0.001f;
-    public float jumpForce = 0.001f;
+    public float runSpeed =2f;
+    public float jumpForce = 2f;
 
     void Start()
     {
@@ -23,23 +23,35 @@ public class PlayerMove : MonoBehaviour
         if(Input.GetKey(KeyCode.D) || Input.GetKey("right"))
         {
             costat = 1;
+            anim.SetBool("walk", true);
             body.velocity = new Vector2(runSpeed, body.velocity.y);
         }
         else if (Input.GetKey(KeyCode.A) || Input.GetKey("left"))
         {
             costat = -1;
+            anim.SetBool("walk", true);
             body.velocity = new Vector2(-runSpeed, body.velocity.y);
         }
         else
         {
             body.velocity = new Vector2(0, body.velocity.y);
+            anim.SetBool("walk", false);
         }
 
         if (Input.GetKey(KeyCode.Space) || (Input.GetKey(KeyCode.W)) && CheckGround.isGrounded)
         {
             body.velocity = new Vector2(body.velocity.x, jumpForce);
+            anim.SetBool("jump", true);
         }
         transform.localScale = new Vector3(costat, 1, 1);
+    }
+
+    private void OnCollisionEnter(Collision2D collision)
+    {
+        if(collision.collider.tag == "Ground")
+        {
+            anim.SetBool("Jump", false);
+        }
     }
 
 }

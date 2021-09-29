@@ -215,6 +215,7 @@ GameObject:
   m_Component:
   - component: {fileID: 97684814}
   - component: {fileID: 97684815}
+  - component: {fileID: 97684816}
   m_Layer: 0
   m_Name: CheckGround
   m_TagString: Untagged
@@ -262,6 +263,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.19418597, y: 0.030106783}
   m_EdgeRadius: 0
+--- !u!114 &97684816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97684813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2430b9c096399f34ab8d8044c8dc70cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &342615741
 GameObject:
   m_ObjectHideFlags: 0
