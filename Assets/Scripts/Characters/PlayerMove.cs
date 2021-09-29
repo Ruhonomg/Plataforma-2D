@@ -46,11 +46,11 @@ public class PlayerMove : MonoBehaviour
         transform.localScale = new Vector3(costat, 1, 1);
     }
 
-    private void OnCollisionEnter(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.collider.tag == "Ground")
         {
-            anim.SetBool("Jump", false);
+            anim.SetBool("jump", false);
         }
     }
 
