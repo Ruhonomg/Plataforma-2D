@@ -3,26 +3,43 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
-{
-    public float runSpeed = 2f;
+{    
+    private int costat;
+    private Rigidbody2D body;
+    private Animator anim;
 
-    private Rigidbody2D body; 
-    private float horizontal;
+    public float runSpeed =0.001f;
+    public float jumpForce = 0.001f;
 
-    // Start is called before the first frame update
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+        costat = 1;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        horizontal = Input.GetAxisRaw("Horizontal");
-    }
-
+   
     void FixedUpdate()
     {
-        body.velocity = new Vector2(horizontal * runSpeed, 0);
+        if(Input.GetKey(KeyCode.D) || Input.GetKey("right"))
+        {
+            costat = 1;
+            body.velocity = new Vector2(runSpeed, body.velocity.y);
+        }
+        else if (Input.GetKey(KeyCode.A) || Input.GetKey("left"))
+        {
+            costat = -1;
+            body.velocity = new Vector2(-runSpeed, body.velocity.y);
+        }
+        else
+        {
+            body.velocity = new Vector2(0, body.velocity.y);
+        }
+
+        if (Input.GetKey(KeyCode.Space) || (Input.GetKey(KeyCode.W)) && CheckGround.isGrounded)
+        {
+            body.velocity = new Vector2(body.velocity.x, jumpForce);
+        }
+        transform.localScale = new Vector3(costat, 1, 1);
     }
+
 }
