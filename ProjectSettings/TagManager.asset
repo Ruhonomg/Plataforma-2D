@@ -4,8 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Ground
-  - Star
+  - Grounds
+  - Stars
   - Bomb
   layers:
   - Default
