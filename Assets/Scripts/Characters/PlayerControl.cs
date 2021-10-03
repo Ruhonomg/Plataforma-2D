@@ -29,6 +29,7 @@ public class PlayerControl : MonoBehaviour
             isTouch = true;
             gameManager.GetComponent<GameManager>().AddPoint();
             gameManager.GetComponent<GameManager>().ShowScore();
+            gameManager.GetComponent<SoundManager>().PlayStarFX();
             StartCoroutine("WaitState");
         }
     }

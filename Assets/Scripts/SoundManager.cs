@@ -5,10 +5,10 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     public AudioClip bombFX;
+    public AudioClip starFX;
 
     private AudioSource audioSource;
 
-    // Start is called before the first frame update
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -17,5 +17,10 @@ public class SoundManager : MonoBehaviour
     public void PlayBombFX()
     {
         audioSource.PlayOneShot(bombFX, 1f);
+    }
+
+    public void PlayStarFX()
+    {
+        audioSource.PlayOneShot(starFX, 10f);
     }
 }
