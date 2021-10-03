@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6324443946059806568
+--- !u!1 &579106106062271165
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,10 +8,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6324443946059806569}
-  - component: {fileID: 6324443946059806574}
-  - component: {fileID: 6324443946059806572}
-  - component: {fileID: 6324443946059806575}
+  - component: {fileID: 579106106062271164}
+  - component: {fileID: 579106106062271163}
+  - component: {fileID: 579106106062271161}
+  - component: {fileID: 579106106062271162}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -19,13 +19,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6324443946059806569
+--- !u!4 &579106106062271164
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6324443946059806568}
+  m_GameObject: {fileID: 579106106062271165}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.9854658, y: -0.8503305, z: -0.14876099}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -33,13 +33,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6324443946059806574
+--- !u!114 &579106106062271163
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6324443946059806568}
+  m_GameObject: {fileID: 579106106062271165}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a8c3086d9593df8478a84b010c58440c, type: 3}
@@ -55,13 +55,13 @@ MonoBehaviour:
   gameOverBox: {fileID: 0}
   victoryBox: {fileID: 0}
   mainCamera: {fileID: 0}
---- !u!114 &6324443946059806572
+--- !u!114 &579106106062271161
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6324443946059806568}
+  m_GameObject: {fileID: 579106106062271165}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f62e75bfced2644b91c9a129441fd72, type: 3}
@@ -69,13 +69,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bombFX: {fileID: 8300000, guid: 8966f8bd3112f1646af8e6754f628ab3, type: 3}
   starFX: {fileID: 8300000, guid: 247bb7a41faad3a4984090231fd667aa, type: 3}
---- !u!82 &6324443946059806575
+--- !u!82 &579106106062271162
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6324443946059806568}
+  m_GameObject: {fileID: 579106106062271165}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
