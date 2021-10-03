@@ -12,7 +12,6 @@ public class PlayerMove : MonoBehaviour
 
     private Rigidbody2D body;
     private Animator anim;
-    private float horizontal;
     private int costat;
 
     // Start is called before the first frame update
