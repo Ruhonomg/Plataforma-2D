@@ -6,16 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class LoadingGame : MonoBehaviour
 {
-    [SerializeField] Slider sliderProgress;
-    
-    void Start()
+    public void SceneSelector()
     {
-        
-    }
-
-    
-    void Update()
-    {
-        
+        SceneManager.LoadScene("Level_1");
     }
 }
