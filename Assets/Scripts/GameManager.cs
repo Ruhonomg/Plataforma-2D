@@ -69,5 +69,27 @@ public class GameManager : MonoBehaviour
         }
 
     }
+   
+    public void LoseAllLive()
+    {
+        lives--;
+        if (lives == 2)
+        {
+            lives--;
+            heart3.SetActive(false);
+        }
+        if (lives == 1)
+        {
+            lives--;
+            heart2.SetActive(false);
+        }
+        if (lives == 0)
+        {
+            heart1.SetActive(false);
+            StartCoroutine(mainCamera.GetComponent<CameraShake>().Shake(0.4f, 0.06f));
+            gameOverBox.SetActive(true);
+        }
+
+    }
 
 }

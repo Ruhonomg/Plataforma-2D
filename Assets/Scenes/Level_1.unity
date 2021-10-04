@@ -368,6 +368,10 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1117743762}
+    - target: {fileID: 1393349116362410726, guid: 2e8408ff09b49b54bbc7858c208ed8e4, type: 3}
+      propertyPath: gameOverBox
+      value: 
+      objectReference: {fileID: 1027080545}
     - target: {fileID: 1393349116362410730, guid: 2e8408ff09b49b54bbc7858c208ed8e4, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1011,6 +1015,14 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: JoystickRightRelease
       objectReference: {fileID: 0}
+    - target: {fileID: 6398433288293863362, guid: fed0566ba0da89c4d9353d8e42a37837, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1117743765}
+    - target: {fileID: 6398433288293863362, guid: fed0566ba0da89c4d9353d8e42a37837, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Restart
+      objectReference: {fileID: 0}
     - target: {fileID: 6398433288665387409, guid: fed0566ba0da89c4d9353d8e42a37837, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1132,6 +1144,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 579106106062271165, guid: df9ab0de929fdad46b3611a6f2c4e759, type: 3}
   m_PrefabInstance: {fileID: 579106104962095151}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1117743765 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 579106106062271163, guid: df9ab0de929fdad46b3611a6f2c4e759, type: 3}
+  m_PrefabInstance: {fileID: 579106104962095151}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117743762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8c3086d9593df8478a84b010c58440c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1142003992
 GameObject:
   m_ObjectHideFlags: 0
@@ -5003,3 +5026,60 @@ PrefabInstance:
       objectReference: {fileID: 624931081}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e3f6285bcde53c47bfa1a4a6fd8859d, type: 3}
+--- !u!1001 &4984569347821743790
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4984569348741431631, guid: 66ef045f72a7e0d4bb600160752422cb, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984569348741431631, guid: 66ef045f72a7e0d4bb600160752422cb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.7910802
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984569348741431631, guid: 66ef045f72a7e0d4bb600160752422cb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984569348741431631, guid: 66ef045f72a7e0d4bb600160752422cb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984569348741431631, guid: 66ef045f72a7e0d4bb600160752422cb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984569348741431631, guid: 66ef045f72a7e0d4bb600160752422cb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984569348741431631, guid: 66ef045f72a7e0d4bb600160752422cb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984569348741431631, guid: 66ef045f72a7e0d4bb600160752422cb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984569348741431631, guid: 66ef045f72a7e0d4bb600160752422cb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984569348741431631, guid: 66ef045f72a7e0d4bb600160752422cb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984569348741431631, guid: 66ef045f72a7e0d4bb600160752422cb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984569348741431665, guid: 66ef045f72a7e0d4bb600160752422cb, type: 3}
+      propertyPath: m_Name
+      value: ElVacio
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 66ef045f72a7e0d4bb600160752422cb, type: 3}
