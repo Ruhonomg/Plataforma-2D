@@ -8,6 +8,7 @@ TagManager:
   - Stars
   - Bomb
   - Vacio
+  - Pinchos
   layers:
   - Default
   - TransparentFX

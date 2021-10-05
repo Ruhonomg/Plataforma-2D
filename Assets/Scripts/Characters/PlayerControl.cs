@@ -37,6 +37,11 @@ public class PlayerControl : MonoBehaviour
             gameManager.GetComponent<GameManager>().LoseAllLive();
             StartCoroutine("WaitState");
         }
+        if (collision.gameObject.tag == "Pinchos")
+        {
+            gameManager.GetComponent<GameManager>().LoseAllLive();
+            StartCoroutine("WaitState");
+        }
     }
     
     private IEnumerator WaitState()
