@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 
     public int lives;
     public int score;
+    public int gem;
     public int starsCount;
     public Text score_Text;
     public GameObject heart3;
@@ -16,6 +17,7 @@ public class GameManager : MonoBehaviour
     public GameObject heart1;
     public GameObject gameOverBox;
     public GameObject victoryBox;
+    public GameObject endgame;
 
     public GameObject mainCamera;
 
@@ -33,6 +35,11 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
     }
+    
+    public void exitGame()
+    {
+        Application.Quit();
+    }
 
     public void AddPoint()
     {
@@ -41,6 +48,10 @@ public class GameManager : MonoBehaviour
         {
             victoryBox.SetActive(true);
         }
+    }
+    public void WinGame()
+    {
+        endgame.SetActive(true);
     }
 
     public void ShowScore()

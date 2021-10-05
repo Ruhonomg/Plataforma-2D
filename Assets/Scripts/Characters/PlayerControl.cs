@@ -31,6 +31,13 @@ public class PlayerControl : MonoBehaviour
             gameManager.GetComponent<SoundManager>().PlayStarFX();
             StartCoroutine("WaitState");
         }
+        if (collision.tag == "Gem" && isTouch == false)
+        {
+            isTouch = true;
+            gameManager.GetComponent<SoundManager>().PlayGemFX();
+            gameManager.GetComponent<GameManager>().WinGame();
+            StartCoroutine("WaitState");
+        }
         if (collision.gameObject.tag == "Vacio")
         {
             Debug.Log("Muerte por caida");
@@ -42,6 +49,7 @@ public class PlayerControl : MonoBehaviour
             gameManager.GetComponent<GameManager>().LoseAllLive();
             StartCoroutine("WaitState");
         }
+        
     }
     
     private IEnumerator WaitState()

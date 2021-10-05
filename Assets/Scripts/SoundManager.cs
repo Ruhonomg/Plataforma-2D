@@ -6,6 +6,7 @@ public class SoundManager : MonoBehaviour
 {
     public AudioClip bombFX;
     public AudioClip starFX;
+    public AudioClip gemFX;
 
     private AudioSource audioSource;
 
@@ -21,6 +22,11 @@ public class SoundManager : MonoBehaviour
 
     public void PlayStarFX()
     {
-        audioSource.PlayOneShot(starFX, 10f);
+        audioSource.PlayOneShot(starFX, 1f);
+    }
+
+    public void PlayGemFX()
+    {
+        audioSource.PlayOneShot(gemFX, 1f);
     }
 }
