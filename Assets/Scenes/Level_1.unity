@@ -911,6 +911,14 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: JoysticJumpRelease
       objectReference: {fileID: 0}
+    - target: {fileID: 6398433287244644759, guid: fed0566ba0da89c4d9353d8e42a37837, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1117743765}
+    - target: {fileID: 6398433287244644759, guid: fed0566ba0da89c4d9353d8e42a37837, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: nextLevel
+      objectReference: {fileID: 0}
     - target: {fileID: 6398433287270783347, guid: fed0566ba0da89c4d9353d8e42a37837, type: 3}
       propertyPath: m_Name
       value: Canvas
